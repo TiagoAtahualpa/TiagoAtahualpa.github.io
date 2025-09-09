@@ -98,3 +98,7 @@ nav a{
 .info-perfil h2{
     font-size: 40px;
 }
+
+span{
+    font-weight: bold;
+}
