@@ -1,0 +1,100 @@
+body{
+    font-family: Ubuntu, Arial, sans-serif;
+    text-align: center;
+    max-width: 1200px; /* Limita a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o contêiner na página */
+    padding: 0 20px; /* Adiciona um pequeno espaçamento interno nas laterais para não grudar o conteúdo nas bordas */
+}
+
+.header-principal{
+    padding: 40px;
+}
+
+
+.nome-inicio{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.header-principal .container{
+    font-size: 15px;
+    margin-right: 60%;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.ponto-final{
+     display: inline-block; /* Permite definir largura e altura */
+  width: 10px; /* Tamanho do ponto */
+  height: 10px; /* Tamanho do ponto */
+  background-color: #ff0008; /* Cor roxa (pode ser qualquer cor que você queira) */
+  border-radius: 50%; /* Transforma o quadrado em um círculo */
+}
+
+/* Container que agrupa foto e texto */
+.perfil {
+  display: flex; /* Habilita o Flexbox */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  justify-content: center; /* Alinha os itens horizontalmente no centro */
+  gap: 50px; /* Adiciona um espaço de 50px entre a foto e o texto */
+  margin-top: 50px; /* Espaço do topo da seção */
+}
+
+/* Deixa a foto redonda e com tamanho fixo */
+.perfil img {
+  border-radius: 50%; /* Faz a borda 50% redonda */
+  width: 350px;
+  height: 380px;
+  margin-bottom: 100px;
+  margin-right: 50px;
+}
+
+/* Remove alinhamento de texto do body para que o texto em 'info-perfil' não seja centralizado */
+.info-perfil {
+  text-align: left; /* Alinha o texto à esquerda, como no exemplo */
+  width: 50%; /* Limita a largura do bloco de texto para que não ocupe a página toda */
+}
+
+.sobre {
+  /* Não precisa mais de border-bottom aqui, podemos colocar no '.perfil' se quisermos */
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+
+.links-sociais {
+  margin-top: 20px;
+  display: flex; /* Transforma os links em uma linha */
+  gap: 15px; /* Espaçamento entre os links */
+}
+
+.link-git{   /* Links Linkedin, Github e portfólio*/
+    border: 2px solid grey;
+    text-decoration: none;
+    color: rgb(56, 53, 53);
+    padding: 3px 7px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.info-perfil p{
+    font-size: 17px;
+    line-height: 23px;
+}
+
+.info-perfil h2{
+    font-size: 40px;
+}
