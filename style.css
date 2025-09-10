@@ -80,7 +80,7 @@ nav a{
   gap: 15px; /* Espaçamento entre os links */
 }
 
-.link-git{   /* Links Linkedin, Github e portfólio*/
+.link-git{   /* links Linkedin, Github e portfólio*/
     border: 2px solid grey;
     text-decoration: none;
     color: rgb(56, 53, 53);
@@ -101,4 +101,250 @@ nav a{
 
 span{
     font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* Container que vai alinhar a imagem e o conteúdo */
+.card-projeto {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 40px; /* Espaço entre a imagem e o conteúdo */
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.container-projetos h3{
+  font-size: 30px;
+}
+
+/* Estilização da parte do conteúdo */
+.projeto-conteudo {
+    flex: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
+    padding: 20px;
+}
+
+/* Estilização da imagem */
+.projeto-imagem {
+    flex: 1; /* Faz com que a imagem ocupe o espaço disponível */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para a lista de tecnologias */
+.tecnologias {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.tecnologias li {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+/* Estilos para os botões */
+.botoes-projeto {
+    display: flex;
+    gap: 15px;
+}
+
+.botoes-projeto button {
+    /* Adicione aqui os estilos de cor, borda, etc. dos botões */
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botoes-projeto button:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+/* Estilo geral da seção */
+.formacao-cursos {
+  padding: 2rem;
+  background-color: #2c2c2c; /* Cor de fundo escura, como na imagem */
+  color: #fff; /* Cor do texto */
+}
+
+/* Estilo do container que envolve os cartões */
+.card-container {
+  display: flex; /* Transforma o container em um contêiner flexível */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  gap: 20px; /* Espaçamento entre os cartões */
+  margin-top: 20px;
+}
+
+/* Estilo de cada cartão individual */
+.card-item {
+  flex: 1 1 300px; /* Isso permite que os cartões cresçam, encolham e tenham um tamanho base de 300px */
+  background-color: #151212; /* Cor de fundo dos cartões */
+  border: 1px solid #444; /* Borda sutil */
+  border-radius: 8px; /* Borda arredondada */
+  padding: 1.5rem; /* Espaçamento interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+  transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+
+
+/* Estilos de texto dentro do cartão */
+.card-item h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+
+.card-item h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-item p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #ddd;
+}
+
+.formacao-cursos h2{
+  font-size: 40px;
+}
+
+
+/* Container que agrupa todas as categorias de habilidades */
+.habilidades-container {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: space-around; /* Distribui o espaço entre as colunas */
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: #1a1a1a; /* Cor de fundo escura */
+    color: #fff;
+}
+
+/* Estilo para cada categoria (Hard Skills, Soft Skills, etc.) */
+.habilidade-categoria {
+    flex: 1; /* Permite que cada categoria ocupe uma parte igual do espaço */
+}
+
+/* Estilo para o título de cada categoria */
+.habilidade-categoria h3 {
+    color:#ffffff; /* Cor azul-esverdeada para o ícone/barra, como no exemplo */
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+
+/* Estilo para a lista de itens */
+.habilidade-categoria ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 10px 30px; /* Espaço entre os itens */
+}
+
+/* Estilo para cada item da lista (cada habilidade) */
+.habilidade-categoria li {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+    flex-basis: calc(50% - 15px); /* Faz com que os itens fiquem em duas colunas */
+}
+
+/* Estilos para a seção de Contato */
+.contato {
+    padding: 80px 20px;
+    background-color: #0d0d0d; /* Cor de fundo escura, um pouco diferente das outras seções */
+    color: #fff;
+}
+
+.contato-container {
+    display: flex; /* Cria as duas colunas */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contato-texto {
+    flex: 1; /* Ocupa o espaço disponível */
+    max-width: 500px;
+}
+
+
+.contato-texto h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.contato-texto p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+.contato-info {
+    flex: 1;
+}
+
+.contato-info ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.contato-info li {
+    margin-bottom: 15px;
+}
+
+.contato-info a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+
+
+/* Estilos para o Rodapé */
+.rodape {
+    background-color: #0a0a0a;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
 }
